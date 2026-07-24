@@ -1,0 +1,64 @@
+{
+  "title": "Denon Signal Info",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Add receiver",
+        "description": "Connect to a Denon or Marantz receiver and expose its current audio and HDMI signal information.",
+        "data": {
+          "host": "Host or IP address",
+          "port": "Port",
+          "use_ssl": "Use HTTPS",
+          "verify_ssl": "Verify SSL certificate",
+          "scan_interval": "Polling interval (seconds)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Unable to connect to the receiver",
+      "invalid_host": "Enter only a host name or IP address, without a URL",
+      "invalid_response": "The device did not return compatible Denon signal information"
+    },
+    "abort": {
+      "already_configured": "This receiver is already configured"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Denon Signal Info options",
+        "data": {
+          "scan_interval": "Polling interval (seconds)"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "sample_rate": {
+        "name": "Sample rate"
+      },
+      "input_signal": {
+        "name": "Input signal"
+      },
+      "audio_format": {
+        "name": "Audio format"
+      },
+      "sound_mode": {
+        "name": "Sound mode"
+      },
+      "hdmi_resolution": {
+        "name": "HDMI resolution"
+      },
+      "hdr": {
+        "name": "HDR"
+      },
+      "color_space": {
+        "name": "Color space"
+      },
+      "pixel_depth": {
+        "name": "Pixel depth"
+      }
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "title": "Denon Signal Info",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Přidat receiver",
+        "description": "Připojí receiver Denon nebo Marantz a zpřístupní aktuální informace o audio a HDMI signálu.",
+        "data": {
+          "host": "Název hostitele nebo IP adresa",
+          "port": "Port",
+          "use_ssl": "Použít HTTPS",
+          "verify_ssl": "Ověřovat SSL certifikát",
+          "scan_interval": "Interval načítání (sekundy)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "K receiveru se nelze připojit",
+      "invalid_host": "Zadejte pouze název hostitele nebo IP adresu, nikoli celé URL",
+      "invalid_response": "Zařízení nevrátilo kompatibilní informace o signálu Denon"
+    },
+    "abort": {
+      "already_configured": "Tento receiver už je nastavený"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Nastavení Denon Signal Info",
+        "data": {
+          "scan_interval": "Interval načítání (sekundy)"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "sample_rate": {
+        "name": "Vzorkovací frekvence"
+      },
+      "input_signal": {
+        "name": "Vstupní signál"
+      },
+      "audio_format": {
+        "name": "Formát zvuku"
+      },
+      "sound_mode": {
+        "name": "Režim zvuku"
+      },
+      "hdmi_resolution": {
+        "name": "Rozlišení HDMI"
+      },
+      "hdr": {
+        "name": "HDR"
+      },
+      "color_space": {
+        "name": "Barevný prostor"
+      },
+      "pixel_depth": {
+        "name": "Barevná hloubka"
+      }
+    }
+  }
+}
